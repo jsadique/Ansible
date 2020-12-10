@@ -35,9 +35,11 @@
     URL: play.example.com
   vars_files:
     - vars01.yml
+- name: print variable
+  hosts: all
+  vars:
+    URL: play.example.com
   tasks:
     - name: print variable
       debug:
-        msg: URL = {{URL}
-      vars:
-       URL: play.example.com
+        sg: URL = {{URL}
