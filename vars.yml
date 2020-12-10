@@ -11,10 +11,16 @@
       URL: task.google.com
      debug:
        msg: URL = {{URL}}
-- name: declear the variables in a file and acces them
+- name: Declear the variables in a file and acces them
   hosts: all
   vars_files:
     - vars01.yml
+  tasks:
+    - name: Print variable
+      debug:
+        msg: URL = {{URL}}
+- name: Declear variables from inventory file and access them
+  hosts: all
   tasks:
     - name: print variable
       debug:
