@@ -22,6 +22,8 @@
 
 - name: Declear variables from inventory files and access them
   hosts: all
+  vars:
+    URL: play.example.com
   tasks:
     - name: print variable
       debug:
