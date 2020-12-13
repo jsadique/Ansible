@@ -1,7 +1,8 @@
-- name : Demo on variable on play
+- name: Demo on variable on play
   hosts: all
   vars:
     URL: play.example.com
   tasks:
-    debug:
+    - name: print variable
+      debug:
       msg: URL = {{URL}}
