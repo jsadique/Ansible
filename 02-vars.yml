@@ -3,5 +3,5 @@
   vars:
     URL: play.example.com
   tasks:
-    dbug:
+    debug:
       msg: URL = {{URL}}
