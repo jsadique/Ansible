@@ -2,7 +2,6 @@
   hosts: all
   vars:
     URL: play.example.com
-  task:
+  tasks:
     dbug:
       msg: URL = {{URL}}
-          
