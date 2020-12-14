@@ -17,7 +17,7 @@
     - sample.yaml
   tasks:
     -name: print variable
-    debug:
-      msg: URL = {{URL}}
+     debug:
+       msg: URL = {{URL}}
 
 
