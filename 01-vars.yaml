@@ -6,3 +6,9 @@
     - name: print variable
       debug:
         msg: URL = {{URL}}
+    - name: print variable from task declearation
+      vars:
+        URL: task.google.com
+      debug:
+        msg: URL = {{URL}
+        
