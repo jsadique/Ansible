@@ -19,5 +19,11 @@
     - name: print variable
       debug:
         msg: URL = {{URL}}
+- name: Decleare variable from inventory
+  hosts: all
+  tasks:
+    - name: print variable
+      debug:
+        msg: URL = {{URL}}
 
 
