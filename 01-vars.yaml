@@ -11,3 +11,13 @@
         URL: task.google.com
       debug:
         msg: URL = {{URL}}
+- name: declear the variables in a file and access them
+  hosts: all
+  vars_files:
+    - sample.yaml
+  tasks:
+    -name: print variable
+    debug:
+      msg: URL = {{URL}}
+
+
