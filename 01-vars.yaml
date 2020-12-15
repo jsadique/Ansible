@@ -26,7 +26,7 @@
       debug:
         msg: URL = {{URL}}
 - name: variable precedence
-  hosts:
+  hosts: all
   vars:
     URL: play.example.com
   vars_files:
