@@ -49,7 +49,7 @@
         msg: OUTPUT = {{OUTPUT}}
 - name: Take input from user
   hosts: all
-  vars_input:
+  vars_prompt:
     - name: URL
       prompt: Enter URL
       private: no
