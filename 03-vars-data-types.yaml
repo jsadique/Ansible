@@ -9,4 +9,4 @@
   tasks:
     - name: Print data
       debug:
-        msg: NUMBER = {{NUMBER}}, CHARACTERS = {{CHARACTERS}}, BOOLEAN1 = {{BOOLEAN1}}, FLOAT = {{FLOAT}}
+        msg: NUMBER = {{NUMBER}}, CHARACTERS = {{CHARACTERS}}, BOOLEAN1 = {{BOOLEAN1}}, FLOAT = {{FLOAT}} CHARACTERS = {{CHARACTERS}}def
