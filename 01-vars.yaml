@@ -47,5 +47,15 @@
     - name: Print Output
       debug:
         msg: OUTPUT = {{OUTPUT}}
+- name: Take input from user
+  hosts: all
+  vars_input:
+    - name: URL
+      prompt: Enter URL
+      private: no
+    tasks:
+      - name: Print variable
+        debug:
+          msg: URL = {{URL}}
 
 
