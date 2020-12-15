@@ -53,7 +53,7 @@
     - name: URL
       prompt: Enter URL
       private: no
-    tasks:
+  tasks:
       - name: Print variable
         debug:
           msg: URL = {{URL}}
