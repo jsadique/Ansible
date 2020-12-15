@@ -37,5 +37,15 @@
         msg: URL = {{URL}}
       vars:
         URL: task.example.com
+- name: Register a variable
+  hosts: all
+  tasks:
+    - name: Find files
+      find:
+        paths: /boot
+      register: OUTPUT
+    - name: Print Output
+      debug:
+        msg: OUTPUT = {{OUTPUT}}
 
 
