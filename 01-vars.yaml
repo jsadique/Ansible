@@ -31,6 +31,10 @@
     URL: play.example.com
   vars_files:
     - sample.yaml
+  vars_prompt:
+    - name: URL
+      prompt: Enter URL
+      private: no
   tasks:
     - name: print variable
       debug:
