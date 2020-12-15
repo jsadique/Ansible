@@ -25,5 +25,17 @@
     - name: print variable
       debug:
         msg: URL = {{URL}}
+- name: variable precedence
+  hosts:
+  vars:
+    URL: play.example.com
+  vars_files:
+    - sample.yaml
+  tasks:
+    - name: print variable
+      debug:
+        msg: URL = {{URL}}
+      vars:
+        URL: URL = {{URL}}
 
 
